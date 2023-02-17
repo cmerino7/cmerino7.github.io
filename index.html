@@ -1,11 +1,50 @@
-<!doctype html>
-  <html>
+<html>
+<div class="titlebar"><title>Welcome</title></div>
+<!--link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"-->
+
+
     <head>
-      <title>Our Funky HTML Page</title>
-      <meta name="description" content="Our first page">
-      <meta name="keywords" content="html tutorial template">
+        <h1 class="pageTitle">Welcome</h1>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/css/bougie.css') }}">
+        <link rel="stylesheet" type="text/css" href=style.css rel="stylesheet">
     </head>
+
     <body>
-      Content goes here.
+        
+        <div class="content">        
+            <div class="aboutBox">
+              <h1>About</h1>
+                <p>My name is Chester Merino, I'm a recent college graduate from University of California, 
+                  Merced where I got my Bachelors in Computer Science and Engineering.</p>
+            </div>
+            <div class="projectBox">
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1iuAFCn2FkOL72ldIIWZ_7B8nFkW9vA7t/view?usp=sharing">Relevance Weighted Meeting Scheduler</a> (proof-of-concept)
+                      <ul>A web app similar to when2meet and Doodle where Organizers can set participants' relevance, and participants can set their availability</ul>
+                      <ul>Software Engineering Capstone Project for Veracruz.Ventures agriculture company</ul>
+                    </li>
+                    <li><a href="https://github.com/cmerino7/Forum-Web-App">Forum Web App</a>
+                      <ul>Website where users can sign up to post questions and replies, as well as vote on relevant replies</ul>
+                      <ul>Demonstrates implementation of hashing+salting passwords and full-stack engineering (front-end design with database schema)</ul>
+                    </li>
+                    <li><a href="https://github.com/cmerino7/Dealership-Database">Dealership Database</a>
+                      <ul>Interactive database website where a user can search a dealerships inventory by vehicle attributes, service records, or sales history</ul>
+                      <ul>Demonstrates database systems (many-to-many relationships and querying searches)</ul>
+                    </li>
+                    <li><a href="https://github.com/cmerino7/rasachatbot">Petbot</a>
+                      <ul>Chatbot trained to chat with a user to find their preferences for a pet</ul>
+                      <ul>Demonstrates Human-Computer Interaction </ul>
+                    </li>
+                    <li><a>Minigolf</a>
+                      <ul>Top down Minigolf game created in OpenGL</ul>
+                      <ul>Demonstrates Object-Oriented Programming with game design</ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
     </body>
-  </html>
+
+
+</html>
