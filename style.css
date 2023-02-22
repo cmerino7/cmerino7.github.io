@@ -1,36 +1,76 @@
 html {
     background-color: rgb(34, 34, 34);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 body {    
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgb(34, 34, 34);
 
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+a:link {
+    color: #008f8f;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #008f8f;
+    text-decoration: none;
 }
 
 .titlebar {
 background-color: black;
 }
 
-.projectBox, .aboutBox {
-    /* border: 2px solid blue; */
-    background-color: rgb(53, 53, 53);
-    width: 40%;    
+.contact {
+    /* border: 2px solid green; */
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+.content {
+    /* border: 2px solid green; */
     float: left;
+    padding: 10px;
+}
+
+.projectBox, .aboutBox {
+
+    width: 46%;    
+    /* float: left; */
+    display: inline-block;
+    vertical-align:middle;
     padding: 5px;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
-.aboutBox {
-    /* border: 2px solid rgb(0, 255, 64); */
-    /* background-color: rgb(0, 0, 0); */
+/* p.notes {
+    position: relative;
+    float: right;
+    top: 0
+} */
 
+.projectBox {
+    /* border: 2px solid rgb(151, 151, 151); */
+    background-color: rgb(53, 53, 53);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .content {
     /* border: 2px solid red;
     background-color: brown; */
+}
+
+p.footnote {
+    text-align: center;
+    font-size: small;
 }
