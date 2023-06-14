@@ -1,10 +1,12 @@
 <html>
-<div class="titlebar"><title>Welcome</title></div>
+<div class="titlebar"><title>CM Web</title></div>
 <!--link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"-->
 
 
     <head>
-        <h1 class="pageTitle">Welcome</h1>
+
+        <h1 class="pageTitle"><span style="font-weight:lighter">Chester</span> Merino</h1>
+
         <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href=style.css rel="stylesheet">
     </head>
@@ -17,38 +19,48 @@
         </div>
         <div class="content">        
             <div class="aboutBox">
-              <h1>About</h1>
-                <p>My name is Chester Merino, I'm a recent college graduate from University of California, 
-                  Merced where I recieved my Bachelors of Science in <span style="font-weight: bold;">Computer Science and Engineering</span>.</p>
-            </div>
+              <h3>Hello</h3>
+                <p>I'm a recent college graduate from University of California, 
+                  Merced where I received my Bachelors of Science in <span style="font-weight: bold;">Computer Science and Engineering</span>.</p>
+                <!-- <p>Below you will find the details of projects I have completed:</p> -->
+                </div>
             <div class="projectBox">
-                <h3>Projects</h3>
+                <h3 class="projTitle">Projects</h3>
                 <ul>
+                  <div class="indPBox">
                     <li><a href="https://drive.google.com/file/d/1iuAFCn2FkOL72ldIIWZ_7B8nFkW9vA7t/view?usp=sharing">Relevance Weighted Meeting Scheduler </a><span style="font-size: small;">(proof-of-concept demo video)</span>
-                      <ul>A web app similar to when2meet and Doodle where Organizers can set participants' relevance, and participants can set their availability</ul>
-                      <ul>Software Engineering Capstone Project sponsored by Veracruz.Ventures agricultural company</ul>
+                      <ul>A web app similar to when2meet.com and Doodle.com where the organizer can set participants' relevance, and participants can set their availability levels</ul>
+                      <ul>A Software Engineering Capstone Project sponsored by Veracruz.Ventures agricultural company and created with ReactJS</ul>
                     </li>
-                    <li><a href="https://github.com/cmerino7/Forum-Web-App">Forum Web App</a>
+                  </div>
+                  <div class="indPBox">  
+                    <li><a href="https://cmerino.pythonanywhere.com">Forum Web App</a> <span style="font-size: small;">(<a href="https://github.com/cmerino7/Forum-Web-App">github</a>)</span>
                       <ul>Website where users can sign up to post questions and replies, as well as vote on relevant replies</ul>
-                      <ul>Demonstrates implementation of hashing+salting passwords and full-stack engineering (front-end design with database schema)</ul>
+                      <ul>A Full Stack Engineering Project demonstrating the implementation of hashing+salting passwords and full-stack engineering (front-end design with database schema) in Flask</ul>
                     </li>
-                    <li><a href="https://github.com/cmerino7/Dealership-Database">Dealership Database</a>
+                  </div>
+                  <div class="indPBox">
+                      <li><a href="https://github.com/cmerino7/Dealership-Database">Dealership Database</a>
                       <ul>Interactive database website where a user can search a dealerships inventory by vehicle attributes, service records, or sales history</ul>
-                      <ul>Demonstrates database systems (many-to-many relationships and querying searches)</ul>
+                      <ul>A Database Systems Project displaying concepts of topics such as many-to-many relationships and querying searches created in Flask</ul>
                     </li>
+                  </div>
+                  <div class="indPBox">
                     <li><a href="https://github.com/cmerino7/rasachatbot">Petbot</a>
                       <ul>Chatbot trained to chat with a user to find their preferences for a pet</ul>
-                      <ul>Demonstrates Human-Computer Interaction </ul>
+                      <ul>A Human-Computer Interaction Project (website offline)</ul>
                     </li>
-                    <li><a>Minigolf</a>
-                      <ul>Top down Minigolf game created in OpenGL</ul>
-                      <ul>Demonstrates Object-Oriented Programming with game design</ul>
+                  </div>
+                  <div class="indPBox">
+                    <li><a href="https://github.com/cmerino7/CSE165-MiniGolf">OpenGL Minigolf</a>
+                      <ul>2D Mini-Golf game created with OpenGL/C++</ul>
+                      <ul>Object-Oriented Programming Project (currently Linux only)</ul>
                     </li>
+                  </div>
 
                 </ul>
             </div>
         </div>
-        <p class="footnote">Under Construction</p>
     </body>
 
 

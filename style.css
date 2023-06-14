@@ -1,6 +1,6 @@
 html {
     background-color: rgb(34, 34, 34);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica;
 }
 
 
@@ -24,8 +24,24 @@ a:visited {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: 008f8f
+}
+
 .titlebar {
-background-color: black;
+    background-color: red;
+    padding: 0;
+}
+
+.headerbar {
+    border: 1px solid black;
+    display: block; 
 }
 
 .contact {
@@ -37,38 +53,63 @@ background-color: black;
 
 .content {
     /* border: 2px solid green; */
-    float: left;
+    /* float: right; */
     padding: 10px;
 }
 
 .projectBox, .aboutBox {
 
-    width: 46%;    
-    /* float: left; */
+/*    width: 46%;    
+     float: left; 
     display: inline-block;
-    vertical-align:middle;
+    vertical-align:middle; 
+    
     padding: 5px;
-    margin: 10px;
+    margin: 10px;*/
     border-radius: 5px;
 
 }
 
-/* p.notes {
-    position: relative;
-    float: right;
-    top: 0
-} */
+.aboutBox {
+    text-align: center;
+}
 
-.projectBox {
+.indPBox {
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring 👇 */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    padding: 15 30;
+    border-radius: 5px;
+    
+}
+
+.indPBox:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.projectBox  {
     /* border: 2px solid rgb(151, 151, 151); */
-    background-color: rgb(53, 53, 53);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    /* shadow ring 👇 */
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    /* multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    margin: 0 200;
+    padding: 10 50;
 }
 
-.content {
-    /* border: 2px solid red;
-    background-color: brown; */
+h3.projTitle {
+    text-align: center;
 }
+
 
 p.footnote {
     text-align: center;
