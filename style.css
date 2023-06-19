@@ -1,6 +1,6 @@
 html {
     background-color: rgb(34, 34, 34);
-    font-family: Helvetica;
+    font-family: candara;
 }
 
 
@@ -15,12 +15,12 @@ h1 {
 }
 
 a:link {
-    color: #008f8f;
+    color: #009bd8;
     text-decoration: none;
   }
 
 a:visited {
-    color: #008f8f;
+    color: #18bdff;
     text-decoration: none;
 }
 
@@ -31,7 +31,8 @@ ul {
 }
 
 h3 {
-    color: 008f8f
+    color: 009bd8;
+    font-weight: lighter;
 }
 
 .titlebar {
@@ -92,6 +93,10 @@ h3 {
     background-color: rgb(40, 40, 40);
 }
 
+a.pTitles {
+    font-weight: bolder;
+}
+
 .projectBox  {
     /* border: 2px solid rgb(151, 151, 151); */
     box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
@@ -103,7 +108,7 @@ h3 {
     0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
     0 3.5px 6px hsla(0, 0%, 0%, 0.09);
     margin: 0 200;
-    padding: 10 50;
+    padding: 2 50 50;
 }
 
 h3.projTitle {
