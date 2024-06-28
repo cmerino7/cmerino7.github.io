@@ -134,7 +134,7 @@ a.pTitles {
     /* border: 2px solid rgb(151, 151, 151); */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 0 200;
-    padding: 2 50 50;
+    padding: 2 0 0;
 }
 
 h3.projTitle {
