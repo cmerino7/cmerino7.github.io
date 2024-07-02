@@ -1,23 +1,38 @@
 html {
-    font-family: candara;
+    font-family: Helvetica, sans-serif; 
 }
 
 
 body {    
     color: rgb(255, 255, 255);
-    background-color: rgb(34, 34, 34);
+    background-image: linear-gradient(to right, #202020 0%, black 100%);
+ 
     margin: 0;
 }
 
 h1 {
-    padding: 0 0 8 40;
-    margin: 0;
-    text-shadow: 3px 4px 7px rgba(0, 155, 216, 0.4);
+    /* padding: 0 1110 8 40; */
+    margin: 10 0 -20 0;
+    text-shadow: 2px 3px 6px rgba(0, 155, 216, 0.4);
+}
+
+h2 {
+    font-size: medium;
+    font-weight: 500;
+    margin: 5 0 5 0;
+    /* color: 009bd8; */
+}
+
+h3 {
+    /* border: 1px solid red; */
+    color: 009bd8;
+    font-weight: 500;
 }
 
 a:link {
     color: #009bd8;
     text-decoration: none;
+    /* border: 2px solid red; */
   }
 
 a:visited {
@@ -31,11 +46,24 @@ a:hover {
   }
 
 .links {
-    justify-content: right;
-    display: flex;
-    position: absolute;
-    right: 40;
+    /* border: 1px solid red; */
+    /* justify-content: right; */
+    /* display: flex; */
+    /* position: absolute; */
+    /* right: 40; */
+    text-align: center;
+    margin: 30 8.5 25 0;
 }
+
+i{
+    padding: 0 15 0;
+    font-size: xx-large;
+    /* color: rgba(0, 155, 216, 1); */
+}
+
+/* li {
+    padding: 0 0 20 0;
+} */
 
 ul {
     list-style-type: none;
@@ -43,99 +71,139 @@ ul {
     padding: 0;
 }
 
-h3 {
-    color: 009bd8;
-    font-weight: lighter;
+.tag { /*THE STACK LIST*/
+    background-color:rgb(0, 75, 105);
+    border: 1px solid #003448;
+    border-radius: 3.5px;
+    padding: 2.5px;
+    margin: 0;
+    font-size: x-small;
 }
 
-.titlebar {
-    background-color: red;
-    padding: 0;
+.tags { /*Division of*/
+    /* border: 1px solid yellow; */
+    margin: 8 0 3 0;
 }
 
-.headerbar {
+
+
+/* .titlebar {
+    background-color: rgb(0, 0, 0);
+    padding: 10;
+} */
+
+/* .headerbar {
     border: 1px solid black;
     display: block; 
-}
+} */
 
-.contact {
+/* .contact {
     border-bottom: 0px solid rgb(0, 0, 0);
     background-color: #1d1d1d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
     position:a;
-    /* right: 50px; */
+    right: 50px; 
     top: 0px;
     display: flex;
     align-items: center;
     margin:0;
     padding: 0;
 
-}
+} */
 
-.contact a {
-    /* justify-content: right; */
+/* .contact a {
+    /* justify-content: right; 
     /* float: right;
-    text-align: center; */
+    text-align: center; 
     padding: 0 10;
     /* display: flex;
-    align-items: e ; */
+    align-items: e ; 
     text-decoration: none;
     font-size: 25px;
     justify-content: right;
     margin:0;
 
-  }
+  } */
 
 .content {
     /* border: 2px solid green; */
     /* float: right; */
-    padding: 10px;
+    padding: 0px;
 }
 
 .projectBox, .aboutBox {
+    background-color: rgb(24, 24, 24);
+    box-shadow: rgba(0, 0, 0, .3) 0px 5px 15px;
 
-/*    width: 46%;    
-     float: left; 
-    display: inline-block;
-    vertical-align:middle; 
+    /* border: .1px solid blue; */
+    float: left; 
+
+    /* display: inline-block; */
+    /* vertical-align:middle;  */
     
     padding: 5px;
-    margin: 10px;*/
-    border-radius: 5px;
+    margin: 10px;
+    border-radius: 15px;
 
-}
-
-.aboutBox {
-    text-align: center;
-}
-
-p.about {
-    /* border: 1px solid red; */
-    margin: 0 260 30;
-}
-
-.indPBox {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 15 30;
-    border-radius: 8px;
-    margin-bottom: 10;
-}
-
-.indPBox:hover {
-    background-color: rgb(36, 36, 36);
-}
-
-a.pTitles {
-    font-weight: bolder;
 }
 
 .projectBox  {
     /* border: 2px solid rgb(151, 151, 151); */
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 0 200;
-    padding: 2 0 0;
+    margin: 10 00;
+    padding: 0 0 0;
+    width: 64%
 }
+
+.aboutBox {
+    width: 30%;
+    text-align: left;
+    padding: 0 5 0 15;
+}
+
+p.about {
+    /* border: 1px solid blue; */
+    margin: 0 260 30;
+}
+
+.indPBox { /*EACH INDIVIDUAL PROJECT INFO*/
+    /* border: 1px solid green; */
+    /* box-shadow: rgba(0, 0, 0, 0.84) 0px 3px 8px; */
+    padding: 5 10 10 10;
+    border-radius: 8px;
+    margin: 0 10 20 10;
+    /* margin-bottom: 10; */
+}
+
+.indPBox:hover {
+    background-color: rgb(40, 40, 40);
+    /* background: rgba(255, 255, 255, 0.03); */
+    background: rgb(0,0,0);
+    background: linear-gradient(30deg, rgb(24, 24, 24) 0%, 
+                rgb(65, 65, 65) 0%, 
+                rgb(30, 30, 30) 20%, 
+                rgb(66, 66, 66) 90% );   
+    transition: color .5s ease;
+    transition: all .5s linear;
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    /* backdrop-filter: blur(0px); */
+    /* -webkit-backdrop-filter: blur(0px); */
+    outline: 1px solid rgba(255, 255, 255, 0.219);
+}
+
+.indPBox:hover h2 {
+    color: #009bd8;
+}
+
+a.pTitles {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+
+
 
 h3.projTitle {
     text-align: center;
