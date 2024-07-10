@@ -1,12 +1,13 @@
 html {
-    font-family: Helvetica, sans-serif; 
+    font-family: 'Afacad';
+    font-size: small;
 }
 
 
 body {    
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, #202020 0%, black 100%);
- 
+    background: rgb(0,26,55);
+    background: radial-gradient(circle, #001a37 0%, #001024 70%);  
     margin: 0;
 }
 
@@ -133,8 +134,8 @@ ul {
 }
 
 .projectBox, .aboutBox {
-    background-color: rgb(24, 24, 24);
-    box-shadow: rgba(0, 0, 0, .3) 0px 5px 15px;
+    /* background-color: rgb(24, 24, 24); */
+    /* box-shadow: rgba(0, 0, 0, .3) 0px 5px 15px; */
 
     /* border: .1px solid blue; */
     float: left; 
@@ -158,7 +159,7 @@ ul {
 .aboutBox {
     width: 30%;
     text-align: left;
-    padding: 0 5 0 15;
+    padding: 90 5 0 15;
 }
 
 p.about {
@@ -179,12 +180,12 @@ p.about {
     background-color: rgb(40, 40, 40);
     /* background: rgba(255, 255, 255, 0.03); */
     background: rgb(0,0,0);
-    background: linear-gradient(30deg, rgb(24, 24, 24) 0%, 
-                rgb(65, 65, 65) 0%, 
-                rgb(30, 30, 30) 20%, 
-                rgb(66, 66, 66) 90% );   
-    transition: color .5s ease;
-    transition: all .5s linear;
+    background: linear-gradient(30deg, rgba(24, 24, 24, .3) 0%, 
+                rgba(65, 65, 65, .3) 0%, 
+                rgba(131, 131, 131, .3) 50%, 
+                rgba(66, 66, 66, .3) 90% );   
+    /* transition: color .5s ease;
+    transition: all .5s linear; */
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
     /* backdrop-filter: blur(0px); */
