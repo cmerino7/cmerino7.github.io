@@ -1,6 +1,6 @@
 html {
     font-family: 'Afacad';
-    font-size: small;
+    font-size: medium;
 }
 
 
@@ -11,15 +11,16 @@ body {
     margin: 0;
 }
 
-h1 {
+h1 {        /*MY NAME*/
     /* padding: 0 1110 8 40; */
     margin: 10 0 -20 0;
-    text-shadow: 2px 3px 6px rgba(0, 155, 216, 0.4);
+    text-shadow: 0px 4px 9px rgba(0, 155, 216, 0.4);
+    font-size: xxx-large;
 }
 
 h2 {
-    font-size: medium;
-    font-weight: 500;
+    font-size: large;
+    font-weight: bolder;
     margin: 5 0 5 0;
     /* color: 009bd8; */
 }
@@ -44,6 +45,8 @@ a:visited {
 a:hover {
     color: #00b7ff;
     text-decoration: none;
+    text-shadow: 0px 3px 6px rgba(0, 155, 216, 0.4);
+
   }
 
 .links {
@@ -127,7 +130,9 @@ ul {
 
   } */
 
-.content {
+
+
+.content {  /*ENTIRE BODY DIV*/
     /* border: 2px solid green; */
     /* float: right; */
     padding: 0px;
@@ -149,14 +154,16 @@ ul {
 
 }
 
-.projectBox  {
-    /* border: 2px solid rgb(151, 151, 151); */
+.projectBox  {      /*PARENT FOR RIGHT SIDE*/
+    /* border: 2px solid rgb(69, 15, 228); */
     margin: 10 00;
-    padding: 0 0 0;
-    width: 64%
+    padding: 50 0 0;
+    width: 64%;
+    display:flex;
+    justify-content: center;
 }
 
-.aboutBox {
+.aboutBox {         /*PARENT FOR LEFT SIDE*/
     width: 30%;
     text-align: left;
     padding: 90 5 0 15;
@@ -167,35 +174,164 @@ p.about {
     margin: 0 260 30;
 }
 
-.indPBox { /*EACH INDIVIDUAL PROJECT INFO*/
-    /* border: 1px solid green; */
+.indPBox {                       /*EACH INDIVIDUAL PROJECT INFO*/
+    /* content: ""; */
+    /* clear: both; */
+    display: inline-flex;  
+    /* border: 1px inset yellow; */
     /* box-shadow: rgba(0, 0, 0, 0.84) 0px 3px 8px; */
-    padding: 5 10 10 10;
+    /* padding: 5 10 10 10; */
     border-radius: 8px;
-    margin: 0 10 20 10;
+    margin: 15 0;
+    /* position: relative; */
     /* margin-bottom: 10; */
 }
 
-.indPBox:hover {
-    background-color: rgb(40, 40, 40);
-    /* background: rgba(255, 255, 255, 0.03); */
-    background: rgb(0,0,0);
-    background: linear-gradient(30deg, rgba(24, 24, 24, .3) 0%, 
-                rgba(65, 65, 65, .3) 0%, 
-                rgba(131, 131, 131, .3) 50%, 
-                rgba(66, 66, 66, .3) 90% );   
-    /* transition: color .5s ease;
-    transition: all .5s linear; */
-    /* border-radius: 16px; */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-    /* backdrop-filter: blur(0px); */
-    /* -webkit-backdrop-filter: blur(0px); */
-    outline: 1px solid rgba(255, 255, 255, 0.219);
+    .indPBox:hover {
+        background-color: rgb(40, 40, 40);
+        /* background: rgba(255, 255, 255, 0.03); */
+        background: rgb(0,0,0);
+        background: linear-gradient(30deg, rgba(24, 24, 24, .3) 0%, 
+                    rgba(65, 65, 65, .3) 0%, 
+                    rgba(131, 131, 131, .3) 50%, 
+                    rgba(66, 66, 66, .3) 90% );   
+        /* transition: color .5s ease;
+        transition: all .5s linear; */
+        /* border-radius: 16px; */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+        /* backdrop-filter: blur(0px); */
+        /* -webkit-backdrop-filter: blur(0px); */
+        outline: 1px solid rgba(255, 255, 255, 0.219);
+    }
+
+    .indPBox:hover h2 {
+        color: #009bd8;
+    }
+
+    .indPBox:hover a {
+        /* color: #ffffff; */
+        text-decoration: underline;
+    }
+
+.info {         /*TEXT DESCRIPTION FOR PROJECT*/
+    /* border: 2px DASHED green; */
+    /* position: relative; */
+    /* margin-left: 225px; */
+    padding: 1;
 }
 
-.indPBox:hover h2 {
-    color: #009bd8;
+.preview {      /*PARENT OF WEBSITE PREVIEWs*/
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    /* display: flex; */
+    /* border: 2px solid rgb(198, 0, 0); */
+    border-radius: 10px;
+    /* float: left; */
+    /* position: absolute; */
+    /* left: 30%; */
+    /* top: 0; 
+    bottom: 0;
+    left:0;
+    right: 435; */
+    /* height:1; */
+    width:fixed; 
+    /* margin: 50  0 ; */
+    /* margin: 50% 0 0 20; */
+    padding: 10;
+
 }
+
+    .img1{
+        /* position: relative;
+        top: 0;
+        left: 0; */
+        /* border: 1px solid black; */
+        box-shadow: rgba(24, 24, 24, 0.84) 0px 3px 8px;
+        object-fit: cover;
+        width: 256;
+        height: 192;
+        inset: 2px solid rgb(198, 195, 0);
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all .3s ease;
+        /* object-fit: contain; */
+        
+    }
+    .img1:hover {
+        transition: .5s ease;
+        box-shadow: rgba(0, 0, 0, 0.84) 0px 3px 8px;
+        opacity: 0.5;
+        background-color: black;
+    }
+    .img2 {     /*ARROW*/
+        border: 2px solid red;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        position:relative;
+        float:left;
+        /* top: 50%; */
+        left: 25%;
+        /* -ms-transform: translate(-50%, -50%); */
+        /* transform: translate(-50%, -50%); */
+        height:100;
+        width:100;
+        /* float:inline-start; */
+        /* top: 100px;
+        left: 20px;
+        height:128;
+        margin-right: -131;
+        margin-top: -225; */
+        /* display: none; */
+        /* z-index: 0; */
+    }
+
+    .overlay {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        bottom: 60%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /* height: 192; */
+        /* width: 256; */
+        border-radius: 10px;
+        /* border: 1px dashed black; */
+
+        opacity: 0;
+        transition: 1s ease;
+        background-color: rgb(179, 38, 38);
+        display: none;
+    }
+    .preview:hover .overlay{
+        opacity: .5;
+        display: block;
+
+    }
+    a.icon{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        /* padding: 64px; */
+        text-align: center;
+        pointer-events: none;
+        color: #009bd8;
+
+    }
 
 a.pTitles {
     font-weight: bolder;
@@ -207,7 +343,10 @@ a.pTitles {
 
 
 h3.projTitle {
+    position: absolute;
+    top: 5;
     text-align: center;
+    /* border: 3px solid purple; */
 }
 
 
